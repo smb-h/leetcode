@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "leetcode"
+version = "0.1.0"
+description = "This project is dedicated to solving LeetCode problems."
+authors = ["SMB H <smbhop@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+jupyter = "^1.0.0"
+coverage = "^7.4.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
