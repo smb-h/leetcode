@@ -6,9 +6,9 @@ class Solution:
         stash = 0
         for i in range(len(s)):
             this_val = values[symbols.index(s[i])]
-            if (stash != 0):
+            if stash != 0:
                 if this_val > stash:
-                    num += (this_val - stash)
+                    num += this_val - stash
                     stash = 0
                     continue
                 if this_val == stash:
@@ -23,6 +23,7 @@ class Solution:
                 stash = this_val
         num += stash
         return num
+
 
 solution = Solution()
 print(solution.romanToInt("III"))
